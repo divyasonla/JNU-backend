@@ -1,0 +1,44 @@
+[
+  {
+    "rollNumber": "JNU2026005555",
+    "studentName": "Alice Smith",
+    "program": "B.Tech Mechanical",
+    "semester": "Semester 4",
+    "session": "May-June 2026",
+    "sgpa": 7.5,
+    "cgpa": 7.8,
+    "resultStatus": "PASS",
+    "subjects": [
+      { "subjectCode": "ME401", "subjectName": "Thermodynamics", "credits": 4, "grade": "B", "status": "Pass" },
+      { "subjectCode": "ME402", "subjectName": "Fluid Mechanics", "credits": 4, "grade": "A", "status": "Pass" }
+    ]
+  },
+  {
+    "rollNumber": "JNU2026009999",
+    "studentName": "Bob Jones",
+    "program": "B.Tech Civil",
+    "semester": "Semester 4",
+    "session": "May-June 2026",
+    "sgpa": 5.5,
+    "cgpa": 6.1,
+    "resultStatus": "FAIL",
+    "subjects": [
+      { "subjectCode": "CE401", "subjectName": "Structural Analysis", "credits": 4, "grade": "F", "status": "Fail" },
+      { "subjectCode": "CE402", "subjectName": "Concrete Technology", "credits": 4, "grade": "C", "status": "Pass" }
+    ]
+  },
+  {
+    "rollNumber": "JNU2026001111",
+    "studentName": "Charlie Brown",
+    "program": "B.Tech Electrical",
+    "semester": "Semester 4",
+    "session": "May-June 2026",
+    "sgpa": 9.2,
+    "cgpa": 9.0,
+    "resultStatus": "PASS",
+    "subjects": [
+      { "subjectCode": "EE401", "subjectName": "Signals and Systems", "credits": 4, "grade": "A+", "status": "Pass" },
+      { "subjectCode": "EE402", "subjectName": "Control Systems", "credits": 4, "grade": "A+", "status": "Pass" }
+    ]
+  }
+]
