@@ -2,8 +2,8 @@ import mongoose from 'mongoose';
 
 const resultSchema = new mongoose.Schema({
   subject: { type: String, required: true },
-  enrollNo: { type: String, required: true, unique: true, uppercase: true },
-  rollNo: { type: String, required: true, unique: true, index: true },
+  enrollNo: { type: String, required: true, uppercase: true },
+  rollNo: { type: String, required: true, index: true },
   name: { type: String, required: true, uppercase: true },
   fatherName: { type: String, required: true, uppercase: true },
   totalMarks: { type: Number, required: true },

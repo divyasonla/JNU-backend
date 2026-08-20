@@ -8,11 +8,7 @@ export const addResult = async (req, res, next) => {
   try {
     const { rollNumber } = req.body;
     
-    const resultExists = await Result.findOne({ rollNumber: rollNumber?.toUpperCase() });
-    if (resultExists) {
-      res.status(400);
-      throw new Error('Result with this roll number already exists');
-    }
+
 
     const result = await Result.create(req.body);
     res.status(201).json({ success: true, data: result });
@@ -28,22 +24,12 @@ export const uploadResult = async (req, res, next) => {
   try {
     const { rollNo, enrollNo } = req.body;
 
-    const resultExists = await Result.findOne({
-      $or: [
-        { rollNo: rollNo?.toUpperCase() },
-        { enrollNo: enrollNo?.toUpperCase() }
-      ]
-    });
 
-    if (resultExists) {
-      res.status(400);
-      throw new Error('Result with this roll number or enrollment number already exists');
-    }
 
     const result = await Result.create(req.body);
     res.status(201).json({ 
       success: true, 
-      message: "Result saved successfully in MongoDB!",
+      message: "Result saved successfully in DataBase!",
       data: result 
     });
   } catch (error) {
